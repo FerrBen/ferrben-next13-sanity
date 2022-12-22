@@ -10,7 +10,7 @@ type Props = {
 function BlogList({ posts }: Props) {
   return (
     <>
-      <hr className="mb-10 border-indigo-700" />
+      {/* <hr className="mb-10 border-indigo-700" /> */}
 
       <div className="grid grid-cols-1 gap-10 gap-y-16 px-10 pb-24 md:grid-cols-2">
         {/* Posts */}
@@ -19,7 +19,7 @@ function BlogList({ posts }: Props) {
             <div key={post._id} className="group flex cursor-pointer flex-col">
               <div className="relative h-80 w-full drop-shadow-xl transition-transform duration-200 ease-out group-hover:scale-105">
                 <Image
-                  className="object-cover object-left lg:object-center"
+                  className=" rounded-2xl object-cover object-left lg:object-center"
                   src={urlFor(post.mainImage).url()}
                   alt={post.author.name}
                   fill
